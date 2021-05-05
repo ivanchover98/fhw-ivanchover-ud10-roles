@@ -1,0 +1,10 @@
+---
+- name: despliegue del códgi html
+  file:
+    src: /home/vagrant/fhw-ivanchover-ud10-roles/index-{{ env }}.html
+    dest: /var/www/html/index.html
+    owner: www-data
+    group: www-data
+
+    
+...

@@ -1,0 +1,9 @@
+---
+- name: superplaybook de rols
+  become: yes
+  hosts: webservers
+  roles:
+    - role: envprev
+    - role: nginx
+    - role: deployhtml
+...

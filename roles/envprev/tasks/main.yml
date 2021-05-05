@@ -1,0 +1,12 @@
+---
+- name: desinstal·lar nginx
+  apt:
+    name: nginx
+    state: absent
+   
+- name: borrar arxius html
+  file:
+    path: /var/www/html/index.html
+    state: absent
+
+...

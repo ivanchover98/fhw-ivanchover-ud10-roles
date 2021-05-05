@@ -1,0 +1,6 @@
+---
+- name: reiniciar l'nginx
+  service:
+    name: apache2
+    state: restarted
+...
